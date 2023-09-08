@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones call back</title>
+</head>
+<body>
+    <div>
+        <form id="calcular" action="">
+            <h2>Notas de semestre</h2>
+            <label for="">Nota 1</label>   
+            <input id="nota1" type="number"><br> <br>
+            <label for="">Nota 2</label>   
+            <input id="nota2" type="number"><br> <br>
+            <label for="">Nota 3</label>   
+            <input id="nota3" type="number"> <br> <br>
+            <input type="button" value="Calcular" onclick="document.getElementById(miNota(parseFloat(nota1.value),parseFloat(nota2.value),parseFloat(nota3.value)))">
+        </form>
+    </div>
+    <div id="resultado">
+
+    </div>
+
+    <script src="funcionesCallB.js"></script>
+</body>
+</html>

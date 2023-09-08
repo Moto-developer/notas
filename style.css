@@ -1,0 +1,33 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#resultadoD{
+    display: none;
+}
+
+.registroN{
+    background-color: rgb(63, 171, 135);
+    color: rgb(255, 255, 255);
+    height: 30px;
+    font-size:medium;
+    border-radius: 5px;
+    border: solid 0.2px black;  
+    box-shadow: 2px 3px 4px;
+}
+
+.registroN:hover{
+    background-color: rgb(44, 124, 98);
+}
+
+#cerrar{
+    background: rgb(161, 49, 49);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    width: 25px;
+}
+
+.modal{
+    border-radius: 10px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+
+    </nav>
+<main>
+    <div>
+        
+            <label for="">Mes</label>
+            <select name="" id="mes">
+                <option value="Enero">Enero</option>
+                <option value="Febrero">Febrero</option>
+                <option value="Marzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Junio">Junio</option>
+                <option value="Julio">Julio</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Septiembre">Septiembre</option>
+                <option value="Octubre">Octubre</option>
+                <option value="Nobiembre">Nobiembre</option>
+                <option value="Diciembre">Diciembre</option>
+            </select>
+            <br>
+            <br>
+            <label for="">Año</label>
+            <select name="" id="año">
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+            </select>
+            <br> 
+            <br>
+            <label for="">Fecha</label>
+            <input id="fecha" type="date">
+            <br>
+            <br>
+            <div id="gp">
+            <label for=""><input id="gana" class="gp" type="radio" name="ganap" value="Gana" checked/>Gana</label>
+            <label for=""><input id="pierde" class="gp" type="radio" name="ganap" value="Pierde"/>Pierde</label>
+            </div>
+            <br>
+            <br>
+            <label for="">Competencia</label>
+            <select name="" id="competencia">
+                <option value="Seleccione" >Seleccione</option>
+                <option value="Diseño">Diseño</option>
+                <option value="JavaScript">JavaScrit</option>
+                <option value="NodeJs">NodeJs</option>
+            </select>
+            <br>
+            <br>
+            <select name="" id="resultadoD">
+                <option value="Seleccione">Seleccione</option>
+                <option value="Plantillas">Plantillas</option>
+                <option value="Librerias">Librerias</option>
+                <option value="Otros">Otros</option>
+            </select>
+            <br>
+            <br>
+            <input id="datos" type="submit" value="Enviar">
+            <input id="datosT" class="datosS" type="button" value="Retornar array" onclick="document.getElementById(datosT(mes.value, año.value, fecha.value, competencia.value, (gp=document.querySelector('input[name=ganap]:checked').value)))">
+    </div>
+
+    <div>
+        <h3>Resultado</h3>
+        <p id="resultado"></p>
+        <p id="resultado2"></p>
+    </div>
+</main>
+
+<script src="nodejs.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="contenedorP">
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <div> 
+            <h1>Registro de notas</h1>
+            <button class="registroN" type="">
+                Registrar nota
+            </button>
+        </div>
+
+        <!-- inicia formulario de notas -->
+        <dialog class="modal" >
+            <div>
+                <button id="cerrar">X</button>
+            </div>
+            <br>
+            <div>
+                <h3>Notas del periodo</h3>
+            </div>
+            <br>
+            <div class="contenedorF">
+            <label for="">Nota 1</label>
+            <input type="number" id="nota1"><br>
+            <br>
+            <label for="">Nota 2</label>
+            <input type="number" id="nota2"><br>
+            <br>
+            <label for="">Nota 3</label>
+            <input type="number" id="nota3"><br>
+            <br>
+            <input type="button" class="registroN" id="calcula" value="Calcular" onclick="document.getElementById(boton(parseFloat(nota1.value),parseFloat(nota2.value),parseFloat(nota3.value)))">
+        </div>
+        </dialog>
+        <!-- fin formuario registro de notas -->
+
+    <div id="resultados">
+        <div>
+            <h2>Resultados</h2>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Nota 3</th>
+                    <th>Nota final</th>
+                </tr>
+            </thead>
+            <tbody class="resulNotas">
+
+            </tbody>
+        </table>
+    </div>
+    
+</main>
+
+</div>
+
+<script src="notas.js"></script>
+</body>
+</html>
