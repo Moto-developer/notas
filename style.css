@@ -2,8 +2,25 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#resultadoD{
+#resultados{
     display: none;
+    border-radius: 5px;
+    background: rgb(247, 222, 190);
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+table{
+    text-align: center;
+    width: 100%;
+}
+
+.titulo{
+    background-color: azure;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
 }
 
 .registroN{
